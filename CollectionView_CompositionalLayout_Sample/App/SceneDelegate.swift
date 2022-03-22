@@ -13,10 +13,30 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
+        
+        let tabBarVC = UITabBarController()
+        tabBarVC.tabBar.backgroundColor = .systemBackground
+        
+        let listVC = UINavigationController(rootViewController: ViewController())
+        listVC.tabBarItem.title = "List"
+        listVC.tabBarItem.image = UIImage(systemName: "list.bullet")
+        
+        let grigVC = UINavigationController(rootViewController: GridViewController())
+        grigVC.tabBarItem.title = "Grid"
+        grigVC.tabBarItem.image = UIImage(systemName: "rectangle.split.3x3.fill")
+        
+        let twoColumnsVC = UINavigationController(rootViewController: TwoColumnsViewController())
+        twoColumnsVC.tabBarItem.title = "Columns"
+        twoColumnsVC.tabBarItem.image = UIImage(systemName: "square.grid.2x2")
+        
+        
+        tabBarVC.viewControllers = [listVC, grigVC, twoColumnsVC]
+        window?.rootViewController = tabBarVC
+        window?.makeKeyAndVisible()
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
