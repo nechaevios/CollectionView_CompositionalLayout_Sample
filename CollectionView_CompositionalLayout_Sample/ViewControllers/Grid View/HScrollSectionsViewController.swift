@@ -9,12 +9,12 @@ import UIKit
 
 final class HScrollSectionsViewController: UIViewController {
 
-    enum Section {
+    private enum Section {
         case main, featured
     }
     
-    var dataSource: UICollectionViewDiffableDataSource<Section, Int>! = nil
-    var collectionView: UICollectionView! = nil
+    private var dataSource: UICollectionViewDiffableDataSource<Section, Int>! = nil
+    private var collectionView: UICollectionView! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()

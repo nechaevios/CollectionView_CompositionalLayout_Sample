@@ -10,12 +10,12 @@ import UIKit
 final class GridWithBadgesViewController: UIViewController {
     
     static let badgeElementKind = "badgeElementKind"
-    enum Section {
+    private enum Section {
         case main
     }
     
     // Diffable data source model items need to be hashable
-    struct Model: Hashable {
+    private struct Model: Hashable {
         let title: String
         let badgeCount: Int
         
@@ -25,8 +25,8 @@ final class GridWithBadgesViewController: UIViewController {
         }
     }
     
-    var dataSource: UICollectionViewDiffableDataSource<Section, Model>! = nil
-    var collectionView: UICollectionView! = nil
+    private var dataSource: UICollectionViewDiffableDataSource<Section, Model>! = nil
+    private var collectionView: UICollectionView! = nil
     
     private lazy var addBarButtonItem: UIBarButtonItem = {
         return UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(updateDiffableView))
