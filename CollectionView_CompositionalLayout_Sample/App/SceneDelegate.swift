@@ -16,25 +16,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        
-        let tabBarVC = UITabBarController()
-        tabBarVC.tabBar.backgroundColor = .systemBackground
-        
-        let listVC = UINavigationController(rootViewController: ViewController())
-        listVC.tabBarItem.title = "List"
-        listVC.tabBarItem.image = UIImage(systemName: "list.bullet")
-        
-        let grigVC = UINavigationController(rootViewController: GridViewController())
-        grigVC.tabBarItem.title = "Grid"
-        grigVC.tabBarItem.image = UIImage(systemName: "rectangle.split.3x3.fill")
-        
-        let twoColumnsVC = UINavigationController(rootViewController: TwoColumnsViewController())
-        twoColumnsVC.tabBarItem.title = "Columns"
-        twoColumnsVC.tabBarItem.image = UIImage(systemName: "square.grid.2x2")
-        
-        
-        tabBarVC.viewControllers = [listVC, grigVC, twoColumnsVC]
-        window?.rootViewController = tabBarVC
+        let mainListVC = UINavigationController(rootViewController: MainListViewController())
+        window?.rootViewController = mainListVC
         window?.makeKeyAndVisible()
         
     }

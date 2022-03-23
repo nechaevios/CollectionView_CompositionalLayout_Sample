@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D87DD49027EB1B6800577B15 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87DD48F27EB1B6800577B15 /* MainListViewController.swift */; };
 		D8A027F727E8D2D200B1DF1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A027F627E8D2D200B1DF1E /* AppDelegate.swift */; };
 		D8A027F927E8D2D200B1DF1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A027F827E8D2D200B1DF1E /* SceneDelegate.swift */; };
 		D8A027FB27E8D2D200B1DF1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A027FA27E8D2D200B1DF1E /* ViewController.swift */; };
@@ -17,9 +18,13 @@
 		D8A0281227E8F12300B1DF1E /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0281127E8F12300B1DF1E /* GridViewController.swift */; };
 		D8A0281427E8F20400B1DF1E /* GridCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0281327E8F20400B1DF1E /* GridCollectionViewCell.swift */; };
 		D8A0281627E8FCFF00B1DF1E /* TwoColumnsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0281527E8FCFF00B1DF1E /* TwoColumnsViewController.swift */; };
+		D8A0281827E9E59300B1DF1E /* GridWithBadgesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0281727E9E59300B1DF1E /* GridWithBadgesViewController.swift */; };
+		D8A0281C27EA1F6C00B1DF1E /* BadgeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0281B27EA1F6C00B1DF1E /* BadgeCollectionViewCell.swift */; };
+		D8A0281E27EA307E00B1DF1E /* HScrollSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0281D27EA307E00B1DF1E /* HScrollSectionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D87DD48F27EB1B6800577B15 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		D8A027F327E8D2D200B1DF1E /* CollectionView_CompositionalLayout_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView_CompositionalLayout_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A027F627E8D2D200B1DF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A027F827E8D2D200B1DF1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,9 @@
 		D8A0281127E8F12300B1DF1E /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		D8A0281327E8F20400B1DF1E /* GridCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8A0281527E8FCFF00B1DF1E /* TwoColumnsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnsViewController.swift; sourceTree = "<group>"; };
+		D8A0281727E9E59300B1DF1E /* GridWithBadgesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridWithBadgesViewController.swift; sourceTree = "<group>"; };
+		D8A0281B27EA1F6C00B1DF1E /* BadgeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8A0281D27EA307E00B1DF1E /* HScrollSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollSectionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,9 @@
 				D8A027FA27E8D2D200B1DF1E /* ViewController.swift */,
 				D8A0281127E8F12300B1DF1E /* GridViewController.swift */,
 				D8A0281527E8FCFF00B1DF1E /* TwoColumnsViewController.swift */,
+				D8A0281727E9E59300B1DF1E /* GridWithBadgesViewController.swift */,
+				D8A0281D27EA307E00B1DF1E /* HScrollSectionsViewController.swift */,
+				D87DD48F27EB1B6800577B15 /* MainListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -115,6 +126,7 @@
 			children = (
 				D8A0280F27E8D37900B1DF1E /* ListCollectionViewCell.swift */,
 				D8A0281327E8F20400B1DF1E /* GridCollectionViewCell.swift */,
+				D8A0281B27EA1F6C00B1DF1E /* BadgeCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,12 +203,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8A0281427E8F20400B1DF1E /* GridCollectionViewCell.swift in Sources */,
+				D8A0281C27EA1F6C00B1DF1E /* BadgeCollectionViewCell.swift in Sources */,
 				D8A027FB27E8D2D200B1DF1E /* ViewController.swift in Sources */,
 				D8A0281227E8F12300B1DF1E /* GridViewController.swift in Sources */,
 				D8A0281627E8FCFF00B1DF1E /* TwoColumnsViewController.swift in Sources */,
+				D8A0281827E9E59300B1DF1E /* GridWithBadgesViewController.swift in Sources */,
+				D8A0281E27EA307E00B1DF1E /* HScrollSectionsViewController.swift in Sources */,
 				D8A027F727E8D2D200B1DF1E /* AppDelegate.swift in Sources */,
 				D8A0281027E8D37900B1DF1E /* ListCollectionViewCell.swift in Sources */,
 				D8A027F927E8D2D200B1DF1E /* SceneDelegate.swift in Sources */,
+				D87DD49027EB1B6800577B15 /* MainListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
