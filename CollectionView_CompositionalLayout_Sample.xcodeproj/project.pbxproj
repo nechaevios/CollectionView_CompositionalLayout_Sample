@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D844CFCF27EB367A00465C9B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844CFCE27EB367A00465C9B /* ListViewController.swift */; };
+		D844CFD427EB39DE00465C9B /* SelfConfiguringCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844CFD327EB39DE00465C9B /* SelfConfiguringCell.swift */; };
+		D844CFD627EB3A1300465C9B /* FeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844CFD527EB3A1300465C9B /* FeaturedCollectionViewCell.swift */; };
+		D844CFD827EB3B7700465C9B /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844CFD727EB3B7700465C9B /* MainCollectionViewCell.swift */; };
+		D844CFDE27EB3DD700465C9B /* AdvancedSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844CFDD27EB3DD700465C9B /* AdvancedSectionsViewController.swift */; };
 		D87DD49027EB1B6800577B15 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87DD48F27EB1B6800577B15 /* MainListViewController.swift */; };
 		D8A027F727E8D2D200B1DF1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A027F627E8D2D200B1DF1E /* AppDelegate.swift */; };
 		D8A027F927E8D2D200B1DF1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A027F827E8D2D200B1DF1E /* SceneDelegate.swift */; };
@@ -25,6 +29,10 @@
 
 /* Begin PBXFileReference section */
 		D844CFCE27EB367A00465C9B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		D844CFD327EB39DE00465C9B /* SelfConfiguringCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfConfiguringCell.swift; sourceTree = "<group>"; };
+		D844CFD527EB3A1300465C9B /* FeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		D844CFD727EB3B7700465C9B /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
+		D844CFDD27EB3DD700465C9B /* AdvancedSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedSectionsViewController.swift; sourceTree = "<group>"; };
 		D87DD48F27EB1B6800577B15 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		D8A027F327E8D2D200B1DF1E /* CollectionView_CompositionalLayout_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView_CompositionalLayout_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A027F627E8D2D200B1DF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D844CFD027EB398D00465C9B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D844CFD327EB39DE00465C9B /* SelfConfiguringCell.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		D844CFD927EB3D2500465C9B /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				D844CFCE27EB367A00465C9B /* ListViewController.swift */,
+				D844CFDF27EB3E0A00465C9B /* Views */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		D844CFDA27EB3D3600465C9B /* Grid View */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0281127E8F12300B1DF1E /* GridViewController.swift */,
+				D8A0281727E9E59300B1DF1E /* GridWithBadgesViewController.swift */,
+				D8A0281527E8FCFF00B1DF1E /* TwoColumnsViewController.swift */,
+				D8A0281D27EA307E00B1DF1E /* HScrollSectionsViewController.swift */,
+				D844CFDB27EB3D4A00465C9B /* Views */,
+			);
+			path = "Grid View";
+			sourceTree = "<group>";
+		};
+		D844CFDB27EB3D4A00465C9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0281327E8F20400B1DF1E /* GridCollectionViewCell.swift */,
+				D8A0281B27EA1F6C00B1DF1E /* BadgeCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D844CFDC27EB3D9500465C9B /* AdvancedSectionsView */ = {
+			isa = PBXGroup;
+			children = (
+				D844CFDD27EB3DD700465C9B /* AdvancedSectionsViewController.swift */,
+				D8A0280E27E8D35400B1DF1E /* Views */,
+			);
+			path = AdvancedSectionsView;
+			sourceTree = "<group>";
+		};
+		D844CFDF27EB3E0A00465C9B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0280F27E8D37900B1DF1E /* ListCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D844CFE027EB3E3300465C9B /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				D87DD48F27EB1B6800577B15 /* MainListViewController.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
 		D8A027EA27E8D2D200B1DF1E = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +143,7 @@
 		D8A027F527E8D2D200B1DF1E /* CollectionView_CompositionalLayout_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				D844CFD027EB398D00465C9B /* Protocols */,
 				D8A0280A27E8D2DB00B1DF1E /* ViewControllers */,
 				D8A0280B27E8D2E800B1DF1E /* App */,
 				D8A0280D27E8D2FB00B1DF1E /* Storyboards */,
@@ -83,13 +155,10 @@
 		D8A0280A27E8D2DB00B1DF1E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D87DD48F27EB1B6800577B15 /* MainListViewController.swift */,
-				D844CFCE27EB367A00465C9B /* ListViewController.swift */,
-				D8A0281127E8F12300B1DF1E /* GridViewController.swift */,
-				D8A0281727E9E59300B1DF1E /* GridWithBadgesViewController.swift */,
-				D8A0281527E8FCFF00B1DF1E /* TwoColumnsViewController.swift */,
-				D8A0281D27EA307E00B1DF1E /* HScrollSectionsViewController.swift */,
-				D8A0280E27E8D35400B1DF1E /* Views */,
+				D844CFE027EB3E3300465C9B /* MainView */,
+				D844CFD927EB3D2500465C9B /* ListView */,
+				D844CFDA27EB3D3600465C9B /* Grid View */,
+				D844CFDC27EB3D9500465C9B /* AdvancedSectionsView */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -124,9 +193,8 @@
 		D8A0280E27E8D35400B1DF1E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D8A0280F27E8D37900B1DF1E /* ListCollectionViewCell.swift */,
-				D8A0281327E8F20400B1DF1E /* GridCollectionViewCell.swift */,
-				D8A0281B27EA1F6C00B1DF1E /* BadgeCollectionViewCell.swift */,
+				D844CFD527EB3A1300465C9B /* FeaturedCollectionViewCell.swift */,
+				D844CFD727EB3B7700465C9B /* MainCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +275,10 @@
 				D844CFCF27EB367A00465C9B /* ListViewController.swift in Sources */,
 				D8A0281227E8F12300B1DF1E /* GridViewController.swift in Sources */,
 				D8A0281627E8FCFF00B1DF1E /* TwoColumnsViewController.swift in Sources */,
+				D844CFD627EB3A1300465C9B /* FeaturedCollectionViewCell.swift in Sources */,
+				D844CFDE27EB3DD700465C9B /* AdvancedSectionsViewController.swift in Sources */,
+				D844CFD427EB39DE00465C9B /* SelfConfiguringCell.swift in Sources */,
+				D844CFD827EB3B7700465C9B /* MainCollectionViewCell.swift in Sources */,
 				D8A0281827E9E59300B1DF1E /* GridWithBadgesViewController.swift in Sources */,
 				D8A0281E27EA307E00B1DF1E /* HScrollSectionsViewController.swift in Sources */,
 				D8A027F727E8D2D200B1DF1E /* AppDelegate.swift in Sources */,
