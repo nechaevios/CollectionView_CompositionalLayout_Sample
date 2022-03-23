@@ -37,19 +37,7 @@ class GridWithBadgesViewController: UIViewController {
         configureHierarchy()
         configureDataSource()
         navigationItem.title = "Grid Badges View"
-        
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .white
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
-        
-        navigationController?.navigationBar.tintColor = .black
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.compactAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        
         navigationItem.rightBarButtonItem = addBarButtonItem
-        
     }
     
     private func configureHierarchy() {

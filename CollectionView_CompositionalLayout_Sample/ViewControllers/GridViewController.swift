@@ -21,16 +21,6 @@ class GridViewController: UIViewController {
         configureDataSource()
         navigationItem.title = "Grid View"
         
-        let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .white
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.black]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.black]
-        
-        navigationController?.navigationBar.tintColor = .black
-        navigationController?.navigationBar.standardAppearance = appearance
-        navigationController?.navigationBar.compactAppearance = appearance
-        navigationController?.navigationBar.scrollEdgeAppearance = appearance
-        
     }
     
     private func configureHierarchy() {

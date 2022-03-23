@@ -21,8 +21,6 @@ class HScrollSectionsViewController: UIViewController {
         configureHierarchy()
         configureDataSource()
         navigationItem.title = "HScroll View"
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.backgroundColor = .systemBackground
     }
     
     private func configureHierarchy() {

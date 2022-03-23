@@ -39,12 +39,22 @@ final class MainListViewController: UIViewController {
         super.viewDidLoad()
         configureHierarchy()
         configureDataSource()
+        setupNavigationBar()
+    }
+    
+    private func setupNavigationBar() {
         navigationItem.title = "Main List"
-        collectionView.delegate = self
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.compactAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
     
     private func configureHierarchy() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: createLayout())
+        collectionView.delegate = self
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         collectionView.backgroundColor = .systemBackground
         collectionView.register(ListCollectionViewCell.self, forCellWithReuseIdentifier: ListCollectionViewCell.reuseIdentifier)
@@ -75,7 +85,7 @@ final class MainListViewController: UIViewController {
             // A constructor that passes the collection view as input and returns cell view as output
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ListCollectionViewCell.reuseIdentifier, for: indexPath) as? ListCollectionViewCell else { fatalError("Cant create cell") }
             cell.label.text = model.title
-//            cell.isUserInteractionEnabled = false
+            
             return cell
         }
         
@@ -93,7 +103,6 @@ extension MainListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let selectedItem = modelItemsList[indexPath.item]
         let viewController = selectedItem.controller
-        print(selectedItem)
-        navigationController?.pushViewController(viewController, animated: false)
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }

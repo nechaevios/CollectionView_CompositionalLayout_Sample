@@ -21,8 +21,6 @@ class TwoColumnsViewController: UIViewController {
         configureHierarchy()
         configureDataSource()
         navigationItem.title = "Columns View"
-        navigationController?.navigationBar.tintColor = .white
-        navigationController?.navigationBar.backgroundColor = .systemBackground
     }
     
     private func configureHierarchy() {

@@ -17,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
         let mainListVC = UINavigationController(rootViewController: MainListViewController())
+        mainListVC.navigationBar.prefersLargeTitles = true
+        
         window?.rootViewController = mainListVC
         window?.makeKeyAndVisible()
         
