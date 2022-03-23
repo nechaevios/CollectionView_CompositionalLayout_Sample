@@ -28,7 +28,7 @@ final class MainListViewController: UIViewController {
     private var collectionView: UICollectionView! = nil
     
     private let modelItemsList = [
-        Model(title: "List View", controller: ViewController()),
+        Model(title: "List View", controller: ListViewController()),
         Model(title: "Grid View", controller: GridViewController()),
         Model(title: "Grid+Badges Diffable View", controller: GridWithBadgesViewController()),
         Model(title: "Two Columns View", controller: TwoColumnsViewController()),

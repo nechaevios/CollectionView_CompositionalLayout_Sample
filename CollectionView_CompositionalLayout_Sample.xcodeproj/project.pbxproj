@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D844CFCF27EB367A00465C9B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D844CFCE27EB367A00465C9B /* ListViewController.swift */; };
 		D87DD49027EB1B6800577B15 /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87DD48F27EB1B6800577B15 /* MainListViewController.swift */; };
 		D8A027F727E8D2D200B1DF1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A027F627E8D2D200B1DF1E /* AppDelegate.swift */; };
 		D8A027F927E8D2D200B1DF1E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A027F827E8D2D200B1DF1E /* SceneDelegate.swift */; };
-		D8A027FB27E8D2D200B1DF1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A027FA27E8D2D200B1DF1E /* ViewController.swift */; };
 		D8A027FE27E8D2D200B1DF1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A027FC27E8D2D200B1DF1E /* Main.storyboard */; };
 		D8A0280027E8D2D300B1DF1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A027FF27E8D2D300B1DF1E /* Assets.xcassets */; };
 		D8A0280327E8D2D300B1DF1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A0280127E8D2D300B1DF1E /* LaunchScreen.storyboard */; };
@@ -24,11 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D844CFCE27EB367A00465C9B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		D87DD48F27EB1B6800577B15 /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
 		D8A027F327E8D2D200B1DF1E /* CollectionView_CompositionalLayout_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView_CompositionalLayout_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8A027F627E8D2D200B1DF1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8A027F827E8D2D200B1DF1E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D8A027FA27E8D2D200B1DF1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D8A027FD27E8D2D200B1DF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8A027FF27E8D2D300B1DF1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8A0280227E8D2D300B1DF1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,12 +84,12 @@
 			isa = PBXGroup;
 			children = (
 				D8A0280E27E8D35400B1DF1E /* Views */,
-				D8A027FA27E8D2D200B1DF1E /* ViewController.swift */,
 				D8A0281127E8F12300B1DF1E /* GridViewController.swift */,
 				D8A0281527E8FCFF00B1DF1E /* TwoColumnsViewController.swift */,
 				D8A0281727E9E59300B1DF1E /* GridWithBadgesViewController.swift */,
 				D8A0281D27EA307E00B1DF1E /* HScrollSectionsViewController.swift */,
 				D87DD48F27EB1B6800577B15 /* MainListViewController.swift */,
+				D844CFCE27EB367A00465C9B /* ListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			files = (
 				D8A0281427E8F20400B1DF1E /* GridCollectionViewCell.swift in Sources */,
 				D8A0281C27EA1F6C00B1DF1E /* BadgeCollectionViewCell.swift in Sources */,
-				D8A027FB27E8D2D200B1DF1E /* ViewController.swift in Sources */,
+				D844CFCF27EB367A00465C9B /* ListViewController.swift in Sources */,
 				D8A0281227E8F12300B1DF1E /* GridViewController.swift in Sources */,
 				D8A0281627E8FCFF00B1DF1E /* TwoColumnsViewController.swift in Sources */,
 				D8A0281827E9E59300B1DF1E /* GridWithBadgesViewController.swift in Sources */,

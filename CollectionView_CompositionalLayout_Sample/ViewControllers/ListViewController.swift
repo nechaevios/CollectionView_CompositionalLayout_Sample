@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
+//  ListViewController.swift
 //  CollectionView_CompositionalLayout_Sample
 //
-//  Created by Nechaev Sergey  on 21.03.2022.
+//  Created by Nechaev Sergey  on 23.03.2022.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class ListViewController: UIViewController {
     
     enum Section {
         case main
@@ -64,6 +64,4 @@ class ViewController: UIViewController {
         snapshot.appendItems(Array(0..<94))
         dataSource.apply(snapshot, animatingDifferences: false)
     }
-    
 }
-
