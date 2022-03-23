@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GridCollectionViewCell: UICollectionViewCell {
+final class GridCollectionViewCell: UICollectionViewCell {
     
     static let reuseIdentifier = "gridCellIdentifier"
     

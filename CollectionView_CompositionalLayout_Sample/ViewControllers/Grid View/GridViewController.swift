@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GridViewController: UIViewController {
+final class GridViewController: UIViewController {
     
     enum Section {
         case main

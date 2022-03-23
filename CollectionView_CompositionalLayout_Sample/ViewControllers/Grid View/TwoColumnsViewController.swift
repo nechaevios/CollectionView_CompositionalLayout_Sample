@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TwoColumnsViewController: UIViewController {
+final class TwoColumnsViewController: UIViewController {
     
     enum Section {
         case main

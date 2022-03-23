@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BadgeCollectionViewCell: UICollectionViewCell {
+final class BadgeCollectionViewCell: UICollectionViewCell {
     
     static let reuseIdentifier = "badgeReuseIdentifier"
     let label = UILabel()

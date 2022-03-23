@@ -32,7 +32,8 @@ final class MainListViewController: UIViewController {
         Model(title: "Grid View", controller: GridViewController()),
         Model(title: "Grid+Badges Diffable View", controller: GridWithBadgesViewController()),
         Model(title: "Two Columns View", controller: TwoColumnsViewController()),
-        Model(title: "HScroll Diffable View", controller: HScrollSectionsViewController())
+        Model(title: "HScroll Diffable View", controller: HScrollSectionsViewController()),
+        Model(title: "Advanced Sections Diffable View", controller: AdvancedSectionsViewController())
     ]
     
     override func viewDidLoad() {

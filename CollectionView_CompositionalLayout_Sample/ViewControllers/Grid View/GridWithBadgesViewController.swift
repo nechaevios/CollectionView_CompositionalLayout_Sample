@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GridWithBadgesViewController: UIViewController {
+final class GridWithBadgesViewController: UIViewController {
     
     static let badgeElementKind = "badgeElementKind"
     enum Section {

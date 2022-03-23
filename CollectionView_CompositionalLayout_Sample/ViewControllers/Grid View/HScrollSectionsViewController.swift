@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HScrollSectionsViewController: UIViewController {
+final class HScrollSectionsViewController: UIViewController {
 
     enum Section {
         case main, featured
