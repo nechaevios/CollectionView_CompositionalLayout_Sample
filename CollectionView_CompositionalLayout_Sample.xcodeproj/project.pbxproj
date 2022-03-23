@@ -72,8 +72,8 @@
 		D8A027F527E8D2D200B1DF1E /* CollectionView_CompositionalLayout_Sample */ = {
 			isa = PBXGroup;
 			children = (
-				D8A0280B27E8D2E800B1DF1E /* App */,
 				D8A0280A27E8D2DB00B1DF1E /* ViewControllers */,
+				D8A0280B27E8D2E800B1DF1E /* App */,
 				D8A0280D27E8D2FB00B1DF1E /* Storyboards */,
 				D8A0280C27E8D2F200B1DF1E /* Resources */,
 			);
@@ -83,13 +83,13 @@
 		D8A0280A27E8D2DB00B1DF1E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D8A0280E27E8D35400B1DF1E /* Views */,
-				D8A0281127E8F12300B1DF1E /* GridViewController.swift */,
-				D8A0281527E8FCFF00B1DF1E /* TwoColumnsViewController.swift */,
-				D8A0281727E9E59300B1DF1E /* GridWithBadgesViewController.swift */,
-				D8A0281D27EA307E00B1DF1E /* HScrollSectionsViewController.swift */,
 				D87DD48F27EB1B6800577B15 /* MainListViewController.swift */,
 				D844CFCE27EB367A00465C9B /* ListViewController.swift */,
+				D8A0281127E8F12300B1DF1E /* GridViewController.swift */,
+				D8A0281727E9E59300B1DF1E /* GridWithBadgesViewController.swift */,
+				D8A0281527E8FCFF00B1DF1E /* TwoColumnsViewController.swift */,
+				D8A0281D27EA307E00B1DF1E /* HScrollSectionsViewController.swift */,
+				D8A0280E27E8D35400B1DF1E /* Views */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
